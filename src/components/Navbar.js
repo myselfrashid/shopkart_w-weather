@@ -3,14 +3,12 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link, Outlet } from "react-router-dom";
 import { UserContext } from "../contexts/userContext";
 import { signOutUser } from "../firebase/firebase";
-import { CartContext } from "../contexts/cartContext";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   const handleClose = () => setNav(!nav);
   const { currentUser } = useContext(UserContext);
-  const { product } = useContext(CartContext);
   return (
     <Fragment>
       <nav className="w-100% h-14 bg-black  drop-shadow-lg">
