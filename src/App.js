@@ -7,6 +7,7 @@ import ProductInfo from './components/ProductInfo';
 import { Product } from './components/Product';
 import Cart from './components/Cart';
 import Authentication from './components/Authentication/Authentication';
+import Weather from './components/Weather';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route exact path = "products" element = {<Product />} />
       <Route exact path = "products/:id" element = {<ProductInfo />} />
       <Route exact path = "cart" element = {<Cart/>} />
+      <Route exact path = "/weather" element = {<Weather />} />
     </Routes>
     </>
   );

@@ -34,6 +34,9 @@ const Navbar = () => {
               <li className="px-10 py-2 rounded-md hover:text-grey-800 text-white font-bold hover:bg-white hover:text-black">
                 <Link to="/contact">Contact Us</Link>
               </li>
+              <li className="px-10 py-2 rounded-md hover:text-grey-800 text-white font-bold hover:bg-white hover:text-black">
+                <Link to='/weather'>Weather</Link>
+              </li>
             </ul>
           </div>
           <div className="hidden md:flex md:flex-row md:justify-end pr-4">
@@ -119,6 +122,12 @@ const Navbar = () => {
             onClick={handleClose}
           >
             <Link to="/contact">Contact Us</Link>
+          </li>
+          <li
+            className="block border-b-2 border-white w-full py-5"
+            onClick={handleClose}
+          >
+            <Link to="/weather">Weather</Link>
           </li>
           <button
             className="block border-b-2 border-white w-full py-5"
